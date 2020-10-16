@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
+
+
 .clock {
     position: relative;
     margin: auto;
-    background:  url("./images/clock.png") no-repeat;
+    background: url("./images/clock.png") no-repeat;
     width: 40vw;
     height: 40vw;
     background-size: 100%;
@@ -27,19 +29,18 @@
     height: 25%;
     top: 25%;
     left: 48.85%;
-   
 }
+
 .clock_minuts {
     width: 1.6%;
     height: 25%;
     top: 24%;
     left: 48.9%;
-  
 }
+
 .clock_seconds {
     width: 1.6%;
     height: 30%;
     top: 19%;
     left: 48.9%;
-    
 }
