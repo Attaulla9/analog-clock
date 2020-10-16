@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clock</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="clock">
+        <div class="clock_hours"></div>
+        <div class="clock_minuts"></div>
+        <div class="clock_seconds"></div>
+    </div>
+
+    <script>
+        setInterval(function () {
+            var date = new Date();
+            var hours = date.getHours();
+            var minuts = date.getMinutes();
+            var second = date.getSeconds();
+            hrotation = 30 * hours + minuts / 2;
+            mrotation = 6 * minuts;
+            srotation = 6 * second;
+            var h=document.querySelector(".clock_hours")
+            var m=document.querySelector(".clock_minuts")
+            var s=document.querySelector(".clock_seconds")
+
+            h.style.transform = `rotate(${hrotation}deg)`;
+            m.style.transform = `rotate(${mrotation}deg)`;
+            s.style.transform = `rotate(${srotation}deg)`;
+
+        }, 1000)
+    </script>
+</body>
+
+</html>
