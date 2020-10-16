@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <h1 style="margin: auto;">Analog Clock by Attaulla</h1>
     <div class="clock">
         <div class="clock_hours"></div>
         <div class="clock_minuts"></div>
@@ -26,9 +26,9 @@
             hrotation = 30 * hours + minuts / 2;
             mrotation = 6 * minuts;
             srotation = 6 * second;
-            var h=document.querySelector(".clock_hours")
-            var m=document.querySelector(".clock_minuts")
-            var s=document.querySelector(".clock_seconds")
+            var h = document.querySelector(".clock_hours")
+            var m = document.querySelector(".clock_minuts")
+            var s = document.querySelector(".clock_seconds")
 
             h.style.transform = `rotate(${hrotation}deg)`;
             m.style.transform = `rotate(${mrotation}deg)`;
